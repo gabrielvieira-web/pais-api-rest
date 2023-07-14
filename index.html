@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Where in the world?</h1>
+        <div class="cabecalho__container-dark-mode" data-dark-mode>
+            <ion-icon name="moon-outline" class="cabecalho__container-dark-mode__icone" data-icone-lua></ion-icon>
+            <p class="cabecalho__container-dark-mode__texto">Dark Mode</p>
+        </div>
+    </header> 
+
+    <main class="conteudo">
+        <nav class="conteudo__navegacao">
+
+            <!-- BARRA DE PESQUISA -->
+
+            <div class="conteudo__navegacao__container-barra-pesquisa">
+                <i class="fa-solid fa-magnifying-glass" id="icone-search"></i><!-- <i class="fa-solid fa-arrow-left-long"></i> -->
+                <input type="search" name="search" id="search" placeholder="Search for a country..." class="conteudo__navegacao__container-barra-pesquisa__input">
+            </div>
+
+            <!-- FILTRO POR REGIÃO -->
+
+            <div class="conteudo__navegacao__container-filtro-regioes">
+                <div class="conteudo__navegacao__container-filtro-regioes__campo-filtro" data-campo-filtro>
+                    <input type="text" name="categoria" class="conteudo__navegacao__container-filtro-regioes__campo-filtro__input" placeholder="Filter by Region" data-campo-filtro-input>
+                    <i class="fa-solid fa-angle-down" id="icone-arrow-down"></i>
+                </div>
+
+                <ul class="conteudo__navegacao__container-filtro-regioes__lista-regioes" data-lista-regioes>
+                    <li class="conteudo__navegacao__container-filtro-regioes__lista-regioes__regiao" data-regiao>Africa</li>
+                    <li class="conteudo__navegacao__container-filtro-regioes__lista-regioes__regiao" data-regiao>America</li>
+                    <li class="conteudo__navegacao__container-filtro-regioes__lista-regioes__regiao" data-regiao>Asia</li>
+                    <li class="conteudo__navegacao__container-filtro-regioes__lista-regioes__regiao" data-regiao>Europe</li>
+                    <li class="conteudo__navegacao__container-filtro-regioes__lista-regioes__regiao" data-regiao>Oceania</li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section class="paises">
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+            <div class="paises__container-pais">
+                <img src="bandeira-do-brasil.webp" alt="" class="paises__container-pais__imagem">
+                <div class="paises__container-pais__dados-pais">
+                    <h2 class="paises__container-pais__dados-pais__nome-pais">Brazil</h2>
+                    <h3 class="paises__container-pais__dados-pais__populacao"><span>Population:</span>206,135,893</h3>
+                    <h3 class="paises__container-pais__dados-pais__regiao"><span>Region:</span>Americas</h3>
+                    <h3 class="paises__container-pais__dados-pais__capital"><span>Capital:</span>brasilia</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script type = "module" src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
