@@ -107,10 +107,18 @@ body {
     font-size: 1rem;
     font-weight: 600;
     color: var(--cor-light-mode-shadow);
+    background-color: var(--cor-light-mode-text-elements);
 }
 
 .conteudo__navegacao__container-barra-pesquisa__input::placeholder {
     color: var(--cor-light-mode-shadow);
+}
+
+.conteudo__navegacao__container-barra-pesquisa__input::-webkit-search-cancel-button, 
+.conteudo__navegacao__container-barra-pesquisa__input::-webkit-search-decoration, 
+.conteudo__navegacao__container-barra-pesquisa__input::-webkit-search-results-button, 
+.conteudo__navegacao__container-barra-pesquisa__input::-webkit-search-results-decoration{
+    display: none;
 }
 
 /* FILTRO REGIÕES */
