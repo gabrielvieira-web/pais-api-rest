@@ -188,6 +188,27 @@ body {
     gap: 4rem;
 }
 
+/* MENSAGEM DE ERRO */
+
+.paises__container-erro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.paises__container-erro__imagem-erro {
+    width: 100px;
+}
+
+.paises__container-erro__mensagem {
+    color: #EC2828;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* CARD PAIS */
+
 .paises__container-pais {
     width: 250px;
     background-color: var(--cor-light-mode-text-elements);
@@ -308,6 +329,23 @@ span {
     .paises {
         padding: 0 2.2rem;
     }
+
+    /* MENSAGEM DE ERRO */
+
+    .paises__container-erro {
+        flex-direction: row;
+        margin: 0;
+    }
+    
+    .paises__container-erro__imagem-erro {
+        width: 70px;
+    }
+    
+    .paises__container-erro__mensagem {
+        font-size: 1rem;
+    }
+
+    /* CARD PAIS */
 
     .paises__container-pais {
         width: 100%;

@@ -14,14 +14,23 @@ barraDePesquisa.addEventListener("keyup", e => {
 
 async function verificaBusca(e) {
     if (e.key === "Enter") {
-        const termoDeBusca = barraDePesquisa.value;
-        const resultadoDaBusca = await conectaApi.buscaPais(termoDeBusca);
-
-        secaoPaises.innerHTML = "";
-
-        resultadoDaBusca.forEach(elemento => secaoPaises.appendChild(constroiCardPais(
-            elemento.flags.png, elemento.name.common, elemento.population, elemento.region, elemento.capital
-        )));
+        try {
+            const termoDeBusca = barraDePesquisa.value;
+            const resultadoDaBusca = await conectaApi.buscaPais(termoDeBusca);
+    
+            secaoPaises.innerHTML = "";
+    
+            resultadoDaBusca.forEach(elemento => secaoPaises.appendChild(constroiCardPais(
+                elemento.flags.png, elemento.name.common, elemento.population, elemento.region, elemento.capital
+            )));
+        } catch {
+            secaoPaises.innerHTML = `
+            <div class="paises__container-erro">
+                <img src="image/erro.png" alt="Imagem Erro" class="paises__container-erro__imagem-erro">
+                <h2 class="paises__container-erro__mensagem">Desculpe, mais não foi possivel encontrar esse Pais!</h2>
+            </div>
+            `
+        }
     }
 }
 
