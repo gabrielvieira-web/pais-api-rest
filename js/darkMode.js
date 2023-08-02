@@ -13,6 +13,22 @@ function darkMode() {
     html.classList.toggle("dark");
 }
 
+function loadTheme() {
+    const darkModeTheme = localStorage.getItem("dark")
+
+    if (darkModeTheme) {
+        darkMode();
+    }
+}
+
+loadTheme();
+
 campoDarkMode.addEventListener("click", () => {
     darkMode();
+
+    localStorage.removeItem("dark")
+
+    if (html.classList.contains("dark")) {
+        localStorage.setItem("dark", 1);
+    }
 });

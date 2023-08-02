@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/paginaPais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Where in the world?</h1>
+        <div class="cabecalho__container-dark-mode" data-dark-mode>
+            <ion-icon name="moon-outline" class="cabecalho__container-dark-mode__icone" data-icone-lua></ion-icon>
+            <p class="cabecalho__container-dark-mode__texto">Dark Mode</p>
+        </div>
+    </header> 
+
+    <main class="conteudo">
+
+        <nav class="conteudo__navegacao">
+            <div class="conteudo__navegacao__container-voltar" data-container-voltar>
+                <i class="fa-solid fa-arrow-left-long" id="icone-arrow-left"></i>
+                <p class="conteudo__navegacao__container-voltar__mensagem">Back</p>
+            </div>
+        </nav>
+
+        <section class="pais">
+        
+            <img src="" alt="imagem pais" class="pais__imagem" data-imagem>
+            <div class="pais__conteudo-pais">
+                <h2 class="pais__conteudo-pais__dados-pais" data-nome-pais></h2>
+                <h3 class="pais__conteudo-pais__dados-pais__nomeNativo" data-nome-nativo><span>Native Name:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__populacao" data-populacao><span>Population:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__regiao" data-regiao><span>Region:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__sub-regiao" data-sub-regiao><span>Sub Region:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__capital" data-capital><span>Capital:</span></h3>
+            </div>
+            <div class="pais__conteudo-pais">
+                <h3 class="pais__conteudo-pais__dados-pais__tld"data-tld><span>Top Level Domain:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__moeda" data-moeda><span>Currencies:</span></h3>
+                <h3 class="pais__conteudo-pais__dados-pais__linguagens" data-linguagens><span>Languages:</span></h3>
+            </div>
+            <div class="pais__conteudo-paises-fronteiros">
+                <h3 class="pais__conteudo-paises-fronteiros__titulo">Border Countries:</h3>
+                <div class="pais__conteudo-paises-fronteiros__pais" data-fronteiro></div>
+                <div class="pais__conteudo-paises-fronteiros__pais" data-fronteiro></div>
+                <div class="pais__conteudo-paises-fronteiros__pais" data-fronteiro></div>
+            </div>
+        
+        </section>
+
+    </main>
+
+    <script type = "module" src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/darkMode.js"></script>
+    <script src="js/conteudoPais.js" type="module"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <title>Países</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/paginaPais.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
@@ -18,13 +19,13 @@
         </div>
     </header> 
 
-    <main class="conteudo">
+    <main class="conteudo" data-conteudo>
         <nav class="conteudo__navegacao">
 
             <!-- BARRA DE PESQUISA -->
 
             <div class="conteudo__navegacao__container-barra-pesquisa">
-                <i class="fa-solid fa-magnifying-glass" id="icone-search"></i><!-- <i class="fa-solid fa-arrow-left-long"></i> -->
+                <i class="fa-solid fa-magnifying-glass" id="icone-search"></i>
                 <input type="search" name="search" id="search" placeholder="Search for a country..." class="conteudo__navegacao__container-barra-pesquisa__input" data-input-search>
             </div>
 
@@ -47,7 +48,7 @@
 
         </nav>
 
-        <section class="paises" data-paises></section>
+        <section class="paises" id="conteudo-paises"></section>
 
     </main>
 

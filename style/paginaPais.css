@@ -1,0 +1,115 @@
+@import url(../style/style.css); 
+
+/* BOTÃO VOLTAR */
+
+.conteudo__navegacao__container-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    padding: .7rem 2.5rem;
+    background-color: var(--cor-light-mode-text-elements);
+    border-radius: 3px;
+    box-shadow:  0px 1px 10px 1px rgba(0, 0, 0, 0.267);
+
+    cursor: pointer;
+}
+
+#icone-arrow-left {
+    font-size: 1.2rem;
+}
+
+.conteudo__navegacao__container-voltar__mensagem {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* PAIS */
+
+.pais {
+    display: grid;
+    grid-template-columns: 45% auto auto ;
+    grid-template-rows: 1fr auto;
+    gap: 0 5.5rem;
+}
+
+.pais__imagem {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0px 1px 8px 7px rgba(0, 0, 0, 0.253)
+}
+
+.pais__conteudo-pais {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+
+.pais__conteudo-pais:nth-child(3) {
+    margin-top: 5rem;
+}
+
+.pais__conteudo-pais__dados-pais {
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-bottom: .8rem;
+}
+
+span, .pais__conteudo-paises-fronteiros__titulo {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.pais__conteudo-paises-fronteiros {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    grid-column: 2/4;
+    margin-bottom: 2rem;
+}
+
+.pais__conteudo-paises-fronteiros__pais {
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+    box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, 0.123);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo {
+        padding: 3rem 7%;
+    }
+
+    .pais {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    .pais__conteudo-pais, .pais__conteudo-pais:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .pais__conteudo-paises-fronteiros {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
+        grid-auto-flow: column;
+        gap: 0 10px;
+    }
+
+    .pais__conteudo-paises-fronteiros__titulo {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin-bottom: 20px;
+    }
+
+    .pais__conteudo-paises-fronteiros__pais {
+        width: 100%;
+        padding: .4rem 0;
+        text-align: center;
+    }
+}
+
